@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="dom.js" defer></script>
+    <style>
+
+    </style>
+</head>
+<body>
+    <header class="centerText"><h1>
+        Hotel California 
+    </h1></header>
+    <main>
+        <form id="form" action="" >
+        <label for="nombre" > Cliente </label>
+        <input id="nombre" maxlength="50" type="text" placeholder="Enter Youre Username" required>
+
+        <label for="FechaE"> Fecha Entrada </label>
+        <input  type="date" id="FechaE" required min="2025-04-30" max="2026-04-30">
+
+        <label for="FechaS"> Fecha Salida </label>
+        <input  type="date" id="FechaS" required min="2025-04-30" max="2026-04-30">
+
+        <label for="NumeroCliente" > Numero de Cliente </label>
+        <input type="number" name="" id="" min="1" max="4" required>
+
+        <label for="Habitacion"></label>
+        <select name="Habitacion" id="Habitacion">
+            <option value="Individual">Individual</option>
+            <option value="Double">Double</option>
+            <option value="Suite">Suite</option>
+        </select>
+
+
+    
+
+
+        <label id="Terminos" for="Terminos"  >  </label>
+        Terminos Y Condiciones
+        <input type="checkbox" value="Terminos" required >
+   
+
+        <label for="Text"> Comentario: </label>
+        <textarea name="text" id="Details"></textarea >
+       
+        <button type="submit" > Send! </button>
+
+        
+    </form>
+    </main>
+    <footer class="centerText">
+        <h3>Prometeo DAW 2025</h3>
+    </footer>
+</body>
+</html>
