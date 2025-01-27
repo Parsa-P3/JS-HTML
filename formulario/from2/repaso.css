@@ -1,0 +1,97 @@
+body {
+    /*para hotel background-image: url('https://assets.simpleviewcms.com/simpleview/image/fetch/c_limit,q_75,w_1200/https://lasvegas.simpleviewcrm.com/images/listings/original_california-hotel_891C6BD7-9E96-A066-2798AEB7059C2127-891c6aeea1c13d6.jpg'); */
+    background-image: url('https://wallpapersmug.com/download/1920x1080/ddcbbf/food-pizza-baking.jpg' ) ;
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: center;
+    align-items: center;   
+    
+}
+
+header, footer {
+    color: aliceblue;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 475px;
+    width: 100%;
+    margin: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5) ;
+    transition: all 0.3 ease;
+    color: aliceblue;
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+legend {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: 500;
+    color: aliceblue;
+}
+
+.labelRadio {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 8px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+input, textarea, button , select{
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    /* no te deja cambiar la area */
+    resize: none;
+}
+
+button {
+    background-color: #6c62de;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #5347d4;
+}

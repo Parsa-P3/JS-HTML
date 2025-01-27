@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de entradas </title>
+</head>
+<body>
+    <form id="intro_from"  action="sent.html" method="GET" name="test">
+        <label for="user_name"> Nombre : </label>
+        <input id="user_name"  maxlength="50" type="text" placeholder=" introduce tu nombre " />
+       
+        <label> Email: </label>
+        <input id="email" type="email" minlength="4"  maxlength="16" placeholder="introduce tu correo" >
+
+        <label> cantidad de entrada </label>
+        <input id="user_entrada" type="number"  min="1"  max="100" step="">
+ 
+        <label for="fecha">Fecha del evento </label>
+        <input id="fecha" type="date">
+
+        <label for="politicas"> Aceptar politicas de privacidad</label>
+        <input id="politicas" type="checkbox" checked="checked">
+
+        <button type="submit"> Enviar </button>
+    <!-- 
+    --nombre
+    --correo
+    --cantidad de entradas
+    --fecha del evento
+    --aceptar los terminos 
+    --boton enviar -->
+</form>
+</body>
+</html>
