@@ -11,3 +11,4 @@
    for (let i = 0; i < items.length; i++) {
        items[i].innerHTML = `<strong>Pregunta ${i + 1}:</strong> <br> ${respuestas[i]}`;
    }
+   
