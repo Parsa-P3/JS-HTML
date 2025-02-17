@@ -18,46 +18,41 @@ crearPerfil.onclick = function () {
     console.log("Edad: ", edad);
     console.log("Descripción: ", descripcion);
 
+    let pattern = new RegExp("[0-9]", "g");
+
     let contenido = document.getElementById("profile_preview");
 
-    //variable para saber si nombre es un numero
-    let isNanNombre = isNaN(Number(nombreCompleto))
+    let isNanNombre = isNaN(Number(nombreCompleto));
 
-    // para saber si contiene numero
-    let pattern = new RegExp("[0-9]" , "g");
     let contieneNumero = nombreCompleto.search(pattern);
 
-   
-    let pattern3 = new RegExp("X" , "d");
-    let contieneletraX =  nombreCompleto.search(pattern3);
-
-
-
-    if(nombreCompleto === ''){
-        alert("Nombre completo no puede estar vacio!");
-    }else if(!(isNanNombre)){
-        alert("Nombre no puede ser numeros!");
-    }else if(contieneNumero !== -1){
-        alert("Nombre no debe contener ser numeros!");
+    for (let index = 0; index < nombreCompleto.length; index++) {
+        if (!isNaN(nombreCompleto[index])) alert("Cuidao.");
     }
-    // hay que poner el !==-1 si no , no funciona bien el condicion
-    else if(contieneletraX !== -1){
-        alert("El nombre no puede empezar con X");
-    }
-    else if (edad === ''){
-        alert("edad  no puede estar vacio!");
-    }else if (descripcion === ''){
-        alert("descripcion  no puede estar vacio!");
-    }else{
-         contenido.innerHTML = `
-        <h3>Nombre: ${nombreCompleto}, ${edad} años</h3>
-        <p>Descripción personal: </p>
-        <p>${descripcion}</p>
-    `;
-    }
-   
 
-    contenido.style.display = "block";
+    //Añadir comprobación para informar al usuario que no puede introducir un nombre vacío
+    if (nombreCompleto === '') {
+        alert("El nombre no puede estar vacío.");
+    }    
+    else if (!isNanNombre) {
+        alert("El nombre no debe ser un número.");
+    }  
+    // else if (contieneNumero !== -1) {
+    //     alert("El nombre no debe contener números.");
+    // }
+    else if (edad === '') {
+        alert("La edad no puede estar vacía.");
+    }
+    else if (descripcion === '') {
+        alert("La descripción no puede estar vacía.");
+    } 
+    else {
+        contenido.innerHTML = `
+            <h3>Nombre: ${nombreCompleto}, ${edad} años</h3>
+            <p>Descripción personal: </p>
+            <p>${descripcion}</p>
+        `;
 
-    
+        contenido.style.display = "block"; 
+    }
 }
