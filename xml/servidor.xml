@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<configuracion_servidor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="servidorxsd.xsd">
+<!-- configuracion para la base de datos de pruebas -->
+    <base_datos nombre="BD_Pruebas">
+      <usuario>admin</usuario>
+      <!-- validacion para contrasena es con CDATA -->
+      <contrasena> <![CDATA[1234]]>
+      </contrasena>
+      <puerto>1024</puerto>
+      <maximo_conexion>100</maximo_conexion>
+      <modo_acceso>local</modo_acceso>
+    </base_datos>
+    
+
+    <base_datos nombre="BD_Produccion">
+      <usuario>admin</usuario>
+      <contrasena> <![CDATA[1234]]>
+      </contrasena>
+      <puerto>1025</puerto>
+      <maximo_conexion>100</maximo_conexion>
+      <modo_acceso>local</modo_acceso>
+    </base_datos>
+
+    <backups>
+            <ruta>/var/logs/backup</ruta>
+            <frecuencia>semanal</frecuencia>
+    </backups>
+</configuracion_servidor>
